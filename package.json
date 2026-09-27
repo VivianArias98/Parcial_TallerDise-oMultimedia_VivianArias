@@ -1,0 +1,21 @@
+{
+  "name": "parcial_tallerdise-omultimedia_vivianarias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VivianArias98/Parcial_TallerDise-oMultimedia_VivianArias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VivianArias98/Parcial_TallerDise-oMultimedia_VivianArias/issues"
+  },
+  "homepage": "https://github.com/VivianArias98/Parcial_TallerDise-oMultimedia_VivianArias#readme"
+}

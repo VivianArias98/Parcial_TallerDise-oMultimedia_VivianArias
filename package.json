@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/VivianArias98/Parcial_TallerDise-oMultimedia_VivianArias/issues"
   },
-  "homepage": "https://github.com/VivianArias98/Parcial_TallerDise-oMultimedia_VivianArias#readme"
+  "homepage": "https://github.com/VivianArias98/Parcial_TallerDise-oMultimedia_VivianArias#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }

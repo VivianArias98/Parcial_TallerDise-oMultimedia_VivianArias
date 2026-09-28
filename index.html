@@ -3,30 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO -->
   <title>Vivian Arias — Portafolio · Ingeniería en Multimedia</title>
-  <meta name="description" content="Portafolio personal de Vivian Arias, Ingeniera en Multimedia. Diseño digital, motion graphics, UX/UI y experiencias inmersivas en realidad aumentada.">
+  <meta name="description" content="Portafolio personal de Vivian Arias, Ingeniera en Multimedia. Diseño digital, motion graphics, UX/UI y realidad aumentada.">
   <meta name="author" content="Vivian Arias">
-  <meta name="keywords" content="multimedia, diseño, portafolio, motion graphics, UX, UI, realidad aumentada, ingeniería">
+  <meta name="keywords" content="multimedia, diseño, portafolio, motion graphics, UX, UI, realidad aumentada">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Vivian Arias — Portafolio · Ingeniería en Multimedia">
+  <meta property="og:title" content="Vivian Arias — Portafolio">
   <meta property="og:description" content="Diseño digital, motion graphics, UX/UI y experiencias inmersivas.">
   <meta property="og:type" content="website">
 
-  <!-- Favicon SVG inline -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
-
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- ══════════════════════════════════════════════════
-       NAVBAR
-  ══════════════════════════════════════════════════ -->
-  <nav id="navbar" aria-label="Navegación principal">
+  <!-- navbar -->
+  <nav id="navbar">
     <div class="container">
       <a href="#hero" class="nav-logo">VA·Studio</a>
       <ul class="nav-links">
@@ -37,19 +29,15 @@
     </div>
   </nav>
 
-  <!-- ══════════════════════════════════════════════════
-       HERO / HEADER
-  ══════════════════════════════════════════════════ -->
+  <!-- hero -->
   <header id="hero">
-    <!-- Background blobs -->
-    <div class="blob blob-1" aria-hidden="true"></div>
-    <div class="blob blob-2" aria-hidden="true"></div>
-    <div class="blob blob-3" aria-hidden="true"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
 
     <div class="container">
       <div class="hero-grid">
 
-        <!-- Text side -->
         <div class="hero-text">
           <div class="hero-eyebrow">
             <span class="dot"></span>
@@ -66,68 +54,47 @@
           </p>
 
           <div class="hero-cta-group">
-            <a href="#proyectos" id="btn-ver-proyectos" class="btn-primary">
-              ✦ Ver proyectos
-            </a>
-            <a href="#contacto" id="btn-contactar" class="btn-outline">
-              Contáctame →
-            </a>
+            <a href="#proyectos" id="btn-ver-proyectos" class="btn-primary">✦ Ver proyectos</a>
+            <a href="#contacto" id="btn-contactar" class="btn-outline">Contáctame →</a>
           </div>
         </div>
 
-        <!-- Visual side -->
         <div class="hero-visual">
           <div class="hero-photo-wrap">
-            <img
-              src="assets/profile.jpg"
-              alt="Fotografía de Vivian Arias, Ingeniera en Multimedia"
-              class="hero-photo"
-            >
+            <img src="assets/profile.jpg" alt="Vivian Arias" class="hero-photo">
           </div>
-
-          <!-- Floating badge -->
-          <div class="hero-badge" aria-label="Proyectos completados">
+          <div class="hero-badge">
             <div class="badge-number">12+</div>
             <div class="badge-label">Proyectos</div>
           </div>
         </div>
 
-      </div><!-- .hero-grid -->
-    </div><!-- .container -->
+      </div>
+    </div>
 
-    <!-- Scroll indicator -->
-    <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-indicator">
       <div class="arrow"></div>
     </div>
   </header>
 
-  <div class="section-divider" role="separator"></div>
+  <div class="section-divider"></div>
 
-  <!-- ══════════════════════════════════════════════════
-       SOBRE MÍ
-  ══════════════════════════════════════════════════ -->
-  <section id="sobre-mi" aria-labelledby="titulo-sobre-mi">
-    <!-- Background blob -->
-    <div class="blob blob-1" style="opacity:0.1; top: 40%; left: -200px;" aria-hidden="true"></div>
+  <!-- sobre mi -->
+  <section id="sobre-mi">
+    <div class="blob blob-1" style="opacity:0.1; top: 40%; left: -200px;"></div>
 
     <div class="container">
       <div class="about-grid">
 
-        <!-- Image column -->
-        <div class="about-image-block fade-up">
+        <div class="about-image-block anim-entrada">
           <div class="about-img-frame">
-            <img
-              src="assets/profile.jpg"
-              alt="Vivian Arias en su entorno creativo"
-              loading="lazy"
-            >
+            <img src="assets/profile.jpg" alt="Vivian Arias en su entorno creativo" loading="lazy">
           </div>
-          <div class="about-glow" aria-hidden="true"></div>
+          <div class="about-glow"></div>
         </div>
 
-        <!-- Content column -->
-        <div class="about-content fade-up">
-          <span class="section-label" aria-hidden="true">Quién soy</span>
+        <div class="about-content anim-entrada">
+          <span class="section-label">Quién soy</span>
 
           <h2 id="titulo-sobre-mi" class="about-title">
             Creo con propósito,<br>
@@ -142,8 +109,7 @@
             Con formación en diseño gráfico, desarrollo web, producción audiovisual y UX/UI, abordo cada proyecto con una visión holística que garantiza coherencia estética y funcionalidad impecable.
           </p>
 
-          <!-- Skill tags -->
-          <div class="skills-row" aria-label="Habilidades">
+          <div class="skills-row">
             <span class="skill-tag">Motion Graphics</span>
             <span class="skill-tag">UX / UI Design</span>
             <span class="skill-tag">Diseño 3D</span>
@@ -154,8 +120,7 @@
             <span class="skill-tag">Blender</span>
           </div>
 
-          <!-- Stats -->
-          <div class="stats-row" aria-label="Estadísticas">
+          <div class="stats-row">
             <div class="stat-item">
               <div class="stat-number">12+</div>
               <div class="stat-desc">Proyectos</div>
@@ -169,21 +134,18 @@
               <div class="stat-desc">Dedicación</div>
             </div>
           </div>
-        </div><!-- .about-content -->
+        </div>
 
-      </div><!-- .about-grid -->
-    </div><!-- .container -->
+      </div>
+    </div>
   </section>
 
-  <div class="section-divider" role="separator"></div>
+  <div class="section-divider"></div>
 
-  <!-- ══════════════════════════════════════════════════
-       PROYECTOS
-  ══════════════════════════════════════════════════ -->
-  <section id="proyectos" aria-labelledby="titulo-proyectos">
-
+  <!-- proyectos -->
+  <section id="proyectos">
     <div class="container">
-      <header class="section-header fade-up">
+      <header class="section-header anim-entrada">
         <span class="section-label">Portafolio</span>
         <h2 id="titulo-proyectos" class="section-title">
           Proyectos <span class="gradient-text">destacados</span>
@@ -193,18 +155,14 @@
         </p>
       </header>
 
-      <div class="projects-grid" role="list">
+      <div class="projects-grid">
 
-        <!-- ── Proyecto 1: Motion Graphics ───────────── -->
-        <article class="project-card fade-up" role="listitem" aria-label="Proyecto Luminosity Reel">
+        <!-- proyecto 1 -->
+        <article class="project-card anim-entrada">
           <div class="card-img-wrap">
             <span class="card-tag">Motion Graphics</span>
-            <img
-              src="assets/project_motion.jpg"
-              alt="Reel de motion graphics Luminosity con efectos 3D y partículas"
-              loading="lazy"
-            >
-            <div class="card-overlay" aria-hidden="true">
+            <img src="assets/project_motion.jpg" alt="Luminosity Reel" loading="lazy">
+            <div class="card-overlay">
               <a href="#contacto" class="overlay-link">✦ Ver más</a>
             </div>
           </div>
@@ -213,7 +171,7 @@
             <p class="card-desc">
               Showreel de animación 3D y motion graphics con geometrías generativas, simulación de partículas y composición cinematográfica.
             </p>
-            <div class="card-tech" aria-label="Tecnologías utilizadas">
+            <div class="card-tech">
               <span class="tech-badge">After Effects</span>
               <span class="tech-badge">Cinema 4D</span>
               <span class="tech-badge">Octane Render</span>
@@ -221,16 +179,12 @@
           </div>
         </article>
 
-        <!-- ── Proyecto 2: UX/UI App ──────────────── -->
-        <article class="project-card fade-up" role="listitem" aria-label="Proyecto Quantum Flow App">
+        <!-- proyecto 2 -->
+        <article class="project-card anim-entrada">
           <div class="card-img-wrap">
             <span class="card-tag">UX / UI</span>
-            <img
-              src="assets/project_ux.jpg"
-              alt="Diseño de app Quantum Flow con dashboard de analíticas y gráficas"
-              loading="lazy"
-            >
-            <div class="card-overlay" aria-hidden="true">
+            <img src="assets/project_ux.jpg" alt="Quantum Flow App" loading="lazy">
+            <div class="card-overlay">
               <a href="#contacto" class="overlay-link">✦ Ver más</a>
             </div>
           </div>
@@ -239,7 +193,7 @@
             <p class="card-desc">
               Diseño completo de aplicación móvil de analíticas con sistema de diseño propio, micro-interacciones y pruebas de usabilidad.
             </p>
-            <div class="card-tech" aria-label="Tecnologías utilizadas">
+            <div class="card-tech">
               <span class="tech-badge">Figma</span>
               <span class="tech-badge">Prototyping</span>
               <span class="tech-badge">Design System</span>
@@ -247,16 +201,12 @@
           </div>
         </article>
 
-        <!-- ── Proyecto 3: Realidad Aumentada ────── -->
-        <article class="project-card fade-up" role="listitem" aria-label="Proyecto NEXUS AR Experience">
+        <!-- proyecto 3 -->
+        <article class="project-card anim-entrada">
           <div class="card-img-wrap">
             <span class="card-tag">Realidad Aumentada</span>
-            <img
-              src="assets/project_ar.jpg"
-              alt="Experiencia de realidad aumentada NEXUS con interfaz holográfica"
-              loading="lazy"
-            >
-            <div class="card-overlay" aria-hidden="true">
+            <img src="assets/project_ar.jpg" alt="NEXUS AR Experience" loading="lazy">
+            <div class="card-overlay">
               <a href="#contacto" class="overlay-link">✦ Ver más</a>
             </div>
           </div>
@@ -265,7 +215,7 @@
             <p class="card-desc">
               Experiencia inmersiva de realidad aumentada con interfaz holográfica flotante, interacción gestual y visualización de datos en tiempo real.
             </p>
-            <div class="card-tech" aria-label="Tecnologías utilizadas">
+            <div class="card-tech">
               <span class="tech-badge">Unity</span>
               <span class="tech-badge">ARKit</span>
               <span class="tech-badge">Shader Graph</span>
@@ -273,25 +223,21 @@
           </div>
         </article>
 
-      </div><!-- .projects-grid -->
-    </div><!-- .container -->
+      </div>
+    </div>
   </section>
 
-  <div class="section-divider" role="separator"></div>
+  <div class="section-divider"></div>
 
-  <!-- ══════════════════════════════════════════════════
-       CONTACTO
-  ══════════════════════════════════════════════════ -->
-  <section id="contacto" aria-labelledby="titulo-contacto">
-    <!-- Background blob -->
-    <div class="blob blob-2" style="opacity:0.08; bottom: -100px; right: -200px;" aria-hidden="true"></div>
+  <!-- contacto -->
+  <section id="contacto">
+    <div class="blob blob-2" style="opacity:0.08; bottom: -100px; right: -200px;"></div>
 
     <div class="container">
       <div class="contact-wrapper">
 
-        <!-- Info column -->
-        <div class="contact-info-block fade-up">
-          <span class="section-label" aria-hidden="true">Trabajemos juntos</span>
+        <div class="contact-info-block anim-entrada">
+          <span class="section-label">Trabajemos juntos</span>
 
           <h2 id="titulo-contacto" class="contact-title">
             ¿Tienes un proyecto<br>
@@ -302,107 +248,75 @@
             Estoy abierta a proyectos freelance, colaboraciones creativas y oportunidades laborales. Escríbeme y construyamos algo increíble.
           </p>
 
-          <!-- Social / contact links -->
-          <nav class="social-links" aria-label="Redes sociales y contacto">
-
-            <a id="link-instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de Instagram">
-              <div class="social-icon ig" aria-hidden="true">📸</div>
+          <nav class="social-links">
+            <a id="link-instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <div class="social-icon ig">📸</div>
               <div class="social-info">
                 <div class="social-name">Instagram</div>
                 <div class="social-handle">@vivian.arias.studio</div>
               </div>
             </a>
 
-            <a id="link-github" href="https://github.com/VivianArias98" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de GitHub">
-              <div class="social-icon gh" aria-hidden="true">⌨️</div>
+            <a id="link-github" href="https://github.com/VivianArias98" target="_blank" rel="noopener noreferrer" class="social-link">
+              <div class="social-icon gh">⌨️</div>
               <div class="social-info">
                 <div class="social-name">GitHub</div>
                 <div class="social-handle">@VivianArias98</div>
               </div>
             </a>
 
-            <a id="link-linkedin" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de LinkedIn">
-              <div class="social-icon li" aria-hidden="true">💼</div>
+            <a id="link-linkedin" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <div class="social-icon li">💼</div>
               <div class="social-info">
                 <div class="social-name">LinkedIn</div>
                 <div class="social-handle">Vivian Arias</div>
               </div>
             </a>
 
-            <a id="link-behance" href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de Behance">
-              <div class="social-icon be" aria-hidden="true">🎨</div>
+            <a id="link-behance" href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link">
+              <div class="social-icon be">🎨</div>
               <div class="social-info">
                 <div class="social-name">Behance</div>
                 <div class="social-handle">vivianarias.multimedia</div>
               </div>
             </a>
-
           </nav>
-        </div><!-- .contact-info-block -->
+        </div>
 
-        <!-- Form column -->
-        <div class="contact-form-card fade-up" role="complementary" aria-label="Formulario de contacto">
-          <form id="contact-form" action="#" method="post" novalidate>
+        <!-- formulario -->
+        <div class="contact-form-card anim-entrada">
+          <form id="contact-form" novalidate>
             <div class="form-row">
               <div class="form-group">
                 <label for="input-nombre">Nombre</label>
-                <input
-                  type="text"
-                  id="input-nombre"
-                  name="nombre"
-                  placeholder="Tu nombre"
-                  required
-                  autocomplete="given-name"
-                >
+                <input type="text" id="input-nombre" name="nombre" placeholder="Tu nombre" required autocomplete="given-name">
               </div>
               <div class="form-group">
                 <label for="input-email">Email</label>
-                <input
-                  type="email"
-                  id="input-email"
-                  name="email"
-                  placeholder="tu@email.com"
-                  required
-                  autocomplete="email"
-                >
+                <input type="email" id="input-email" name="email" placeholder="tu@email.com" required autocomplete="email">
               </div>
             </div>
 
             <div class="form-group full">
               <label for="input-asunto">Asunto</label>
-              <input
-                type="text"
-                id="input-asunto"
-                name="asunto"
-                placeholder="¿De qué trata tu proyecto?"
-                required
-              >
+              <input type="text" id="input-asunto" name="asunto" placeholder="¿De qué trata tu proyecto?" required>
             </div>
 
             <div class="form-group full">
               <label for="input-mensaje">Mensaje</label>
-              <textarea
-                id="input-mensaje"
-                name="mensaje"
-                placeholder="Cuéntame sobre tu idea, proyecto o consulta..."
-                required
-              ></textarea>
+              <textarea id="input-mensaje" name="mensaje" placeholder="Cuéntame sobre tu idea, proyecto o consulta..." required></textarea>
             </div>
 
-            <button type="submit" id="btn-enviar" class="btn-submit">
-              ✦ Enviar mensaje
-            </button>
+            <button type="submit" id="btn-enviar" class="btn-submit">✦ Enviar mensaje</button>
           </form>
-        </div><!-- .contact-form-card -->
+        </div>
 
-      </div><!-- .contact-wrapper -->
-    </div><!-- .container -->
+      </div>
+    </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════════════════ -->
-  <footer id="footer" role="contentinfo">
+  <!-- footer -->
+  <footer id="footer">
     <div class="container">
       <div class="footer-inner">
         <span class="footer-logo">VA·Studio</span>
@@ -412,7 +326,7 @@
           Taller de Diseño Multimedia — Todos los derechos reservados
         </p>
 
-        <nav class="footer-links" aria-label="Links del footer">
+        <nav class="footer-links">
           <a href="#hero">Inicio</a>
           <a href="#sobre-mi">Sobre mí</a>
           <a href="#proyectos">Proyectos</a>
@@ -422,47 +336,6 @@
     </div>
   </footer>
 
-  <!-- ══════════════════════════════════════════════════
-       JAVASCRIPT — Interacciones
-  ══════════════════════════════════════════════════ -->
-  <script>
-    /* ── Navbar scroll ─────────────────────────────── */
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 40);
-    });
-
-    /* ── Fade-up on scroll (IntersectionObserver) ──── */
-    const fadeEls = document.querySelectorAll('.fade-up');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    fadeEls.forEach(el => observer.observe(el));
-
-    /* ── Contact form ──────────────────────────────── */
-    const form = document.getElementById('contact-form');
-    const btnSubmit = document.getElementById('btn-enviar');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      btnSubmit.textContent = '✓ ¡Mensaje enviado!';
-      btnSubmit.style.background = 'linear-gradient(135deg, #22d3ee, #a855f7)';
-      btnSubmit.disabled = true;
-
-      setTimeout(() => {
-        btnSubmit.textContent = '✦ Enviar mensaje';
-        btnSubmit.style.background = '';
-        btnSubmit.disabled = false;
-        form.reset();
-      }, 3500);
-    });
-  </script>
 
 </body>
 </html>

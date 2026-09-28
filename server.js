@@ -4,18 +4,16 @@ const app = express();
 
 const PORT = 3000;
 
-// Página principal
+// Servir archivos estáticos (HTML, CSS, assets)
+app.use(express.static(path.join(__dirname)));
+
+// Ruta raíz → index.html
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// Hoja de estilos
-app.get("/styles.css", (req, res) => {
-  res.sendFile(path.join(__dirname, "styles.css"));
-});
-
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en: http://localhost:${PORT}`);
+  console.log(`✦ Portafolio corriendo en: http://localhost:${PORT}`);
 });
 
 

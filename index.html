@@ -1,11 +1,466 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Vivian Arias — Portafolio · Ingeniería en Multimedia</title>
+  <meta name="description" content="Portafolio personal de Vivian Arias, Ingeniera en Multimedia. Diseño digital, motion graphics, UX/UI y experiencias inmersivas en realidad aumentada.">
+  <meta name="author" content="Vivian Arias">
+  <meta name="keywords" content="multimedia, diseño, portafolio, motion graphics, UX, UI, realidad aumentada, ingeniería">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vivian Arias — Portafolio · Ingeniería en Multimedia">
+  <meta property="og:description" content="Diseño digital, motion graphics, UX/UI y experiencias inmersivas.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+  <!-- ══════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════ -->
+  <nav id="navbar" aria-label="Navegación principal">
+    <div class="container">
+      <a href="#hero" class="nav-logo">VA·Studio</a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════
+       HERO / HEADER
+  ══════════════════════════════════════════════════ -->
+  <header id="hero">
+    <!-- Background blobs -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="blob blob-3" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Text side -->
+        <div class="hero-text">
+          <div class="hero-eyebrow">
+            <span class="dot"></span>
+            Disponible para proyectos
+          </div>
+
+          <h1 class="hero-name">
+            Hola, soy<br>
+            <span class="gradient-text">Vivian Arias</span>
+          </h1>
+
+          <p class="hero-tagline">
+            Ingeniera en Multimedia que transforma ideas en experiencias digitales que conectan, emocionan y trascienden.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#proyectos" id="btn-ver-proyectos" class="btn-primary">
+              ✦ Ver proyectos
+            </a>
+            <a href="#contacto" id="btn-contactar" class="btn-outline">
+              Contáctame →
+            </a>
+          </div>
+        </div>
+
+        <!-- Visual side -->
+        <div class="hero-visual">
+          <div class="hero-photo-wrap">
+            <img
+              src="assets/profile.jpg"
+              alt="Fotografía de Vivian Arias, Ingeniera en Multimedia"
+              class="hero-photo"
+            >
+          </div>
+
+          <!-- Floating badge -->
+          <div class="hero-badge" aria-label="Proyectos completados">
+            <div class="badge-number">12+</div>
+            <div class="badge-label">Proyectos</div>
+          </div>
+        </div>
+
+      </div><!-- .hero-grid -->
+    </div><!-- .container -->
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="arrow"></div>
+    </div>
+  </header>
+
+  <div class="section-divider" role="separator"></div>
+
+  <!-- ══════════════════════════════════════════════════
+       SOBRE MÍ
+  ══════════════════════════════════════════════════ -->
+  <section id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+    <!-- Background blob -->
+    <div class="blob blob-1" style="opacity:0.1; top: 40%; left: -200px;" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image column -->
+        <div class="about-image-block fade-up">
+          <div class="about-img-frame">
+            <img
+              src="assets/profile.jpg"
+              alt="Vivian Arias en su entorno creativo"
+              loading="lazy"
+            >
+          </div>
+          <div class="about-glow" aria-hidden="true"></div>
+        </div>
+
+        <!-- Content column -->
+        <div class="about-content fade-up">
+          <span class="section-label" aria-hidden="true">Quién soy</span>
+
+          <h2 id="titulo-sobre-mi" class="about-title">
+            Creo con propósito,<br>
+            <span class="gradient-text">diseño con pasión</span>
+          </h2>
+
+          <p class="about-text">
+            Soy <strong>Vivian Arias</strong>, Ingeniera en Multimedia apasionada por la intersección entre arte, tecnología y comunicación. Me especializo en crear experiencias visuales que no solo se ven bien, sino que cuentan historias poderosas.
+          </p>
+
+          <p class="about-text">
+            Con formación en diseño gráfico, desarrollo web, producción audiovisual y UX/UI, abordo cada proyecto con una visión holística que garantiza coherencia estética y funcionalidad impecable.
+          </p>
+
+          <!-- Skill tags -->
+          <div class="skills-row" aria-label="Habilidades">
+            <span class="skill-tag">Motion Graphics</span>
+            <span class="skill-tag">UX / UI Design</span>
+            <span class="skill-tag">Diseño 3D</span>
+            <span class="skill-tag">After Effects</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Realidad Aumentada</span>
+            <span class="skill-tag">HTML · CSS · JS</span>
+            <span class="skill-tag">Blender</span>
+          </div>
+
+          <!-- Stats -->
+          <div class="stats-row" aria-label="Estadísticas">
+            <div class="stat-item">
+              <div class="stat-number">12+</div>
+              <div class="stat-desc">Proyectos</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-desc">Años exp.</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-desc">Dedicación</div>
+            </div>
+          </div>
+        </div><!-- .about-content -->
+
+      </div><!-- .about-grid -->
+    </div><!-- .container -->
+  </section>
+
+  <div class="section-divider" role="separator"></div>
+
+  <!--  PROYECTOS-->
+  <section id="proyectos" aria-labelledby="titulo-proyectos">
+
+    <div class="container">
+      <header class="section-header fade-up">
+        <span class="section-label">Portafolio</span>
+        <h2 id="titulo-proyectos" class="section-title">
+          Proyectos <span class="gradient-text">destacados</span>
+        </h2>
+        <p class="section-subtitle">
+          Una selección de trabajos que muestran mi proceso creativo y mis habilidades técnicas.
+        </p>
+      </header>
+
+      <div class="projects-grid" role="list">
+
+        <!-- ── Proyecto 1: Motion Graphics ───────────── -->
+        <article class="project-card fade-up" role="listitem" aria-label="Proyecto Luminosity Reel">
+          <div class="card-img-wrap">
+            <span class="card-tag">Motion Graphics</span>
+            <img
+              src="assets/project_motion.jpg"
+              alt="Reel de motion graphics Luminosity con efectos 3D y partículas"
+              loading="lazy"
+            >
+            <div class="card-overlay" aria-hidden="true">
+              <a href="#contacto" class="overlay-link">✦ Ver más</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Luminosity Reel 2024</h3>
+            <p class="card-desc">
+              Showreel de animación 3D y motion graphics con geometrías generativas, simulación de partículas y composición cinematográfica.
+            </p>
+            <div class="card-tech" aria-label="Tecnologías utilizadas">
+              <span class="tech-badge">After Effects</span>
+              <span class="tech-badge">Cinema 4D</span>
+              <span class="tech-badge">Octane Render</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Proyecto 2: UX/UI App ──────────────── -->
+        <article class="project-card fade-up" role="listitem" aria-label="Proyecto Quantum Flow App">
+          <div class="card-img-wrap">
+            <span class="card-tag">UX / UI</span>
+            <img
+              src="assets/project_ux.jpg"
+              alt="Diseño de app Quantum Flow con dashboard de analíticas y gráficas"
+              loading="lazy"
+            >
+            <div class="card-overlay" aria-hidden="true">
+              <a href="#contacto" class="overlay-link">✦ Ver más</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Quantum Flow App</h3>
+            <p class="card-desc">
+              Diseño completo de aplicación móvil de analíticas con sistema de diseño propio, micro-interacciones y pruebas de usabilidad.
+            </p>
+            <div class="card-tech" aria-label="Tecnologías utilizadas">
+              <span class="tech-badge">Figma</span>
+              <span class="tech-badge">Prototyping</span>
+              <span class="tech-badge">Design System</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Proyecto 3: Realidad Aumentada ────── -->
+        <article class="project-card fade-up" role="listitem" aria-label="Proyecto NEXUS AR Experience">
+          <div class="card-img-wrap">
+            <span class="card-tag">Realidad Aumentada</span>
+            <img
+              src="assets/project_ar.jpg"
+              alt="Experiencia de realidad aumentada NEXUS con interfaz holográfica"
+              loading="lazy"
+            >
+            <div class="card-overlay" aria-hidden="true">
+              <a href="#contacto" class="overlay-link">✦ Ver más</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">NEXUS AR Experience</h3>
+            <p class="card-desc">
+              Experiencia inmersiva de realidad aumentada con interfaz holográfica flotante, interacción gestual y visualización de datos en tiempo real.
+            </p>
+            <div class="card-tech" aria-label="Tecnologías utilizadas">
+              <span class="tech-badge">Unity</span>
+              <span class="tech-badge">ARKit</span>
+              <span class="tech-badge">Shader Graph</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- .projects-grid -->
+    </div><!-- .container -->
+  </section>
+
+  <div class="section-divider" role="separator"></div>
+
+  <!-- ══════════════════════════════════════════════════
+       CONTACTO
+  ══════════════════════════════════════════════════ -->
+  <section id="contacto" aria-labelledby="titulo-contacto">
+    <!-- Background blob -->
+    <div class="blob blob-2" style="opacity:0.08; bottom: -100px; right: -200px;" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="contact-wrapper">
+
+        <!-- Info column -->
+        <div class="contact-info-block fade-up">
+          <span class="section-label" aria-hidden="true">Trabajemos juntos</span>
+
+          <h2 id="titulo-contacto" class="contact-title">
+            ¿Tienes un proyecto<br>
+            <span class="gradient-text">en mente?</span>
+          </h2>
+
+          <p class="contact-subtitle">
+            Estoy abierta a proyectos freelance, colaboraciones creativas y oportunidades laborales. Escríbeme y construyamos algo increíble.
+          </p>
+
+          <!-- Social / contact links -->
+          <nav class="social-links" aria-label="Redes sociales y contacto">
+
+            <a id="link-instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de Instagram">
+              <div class="social-icon ig" aria-hidden="true">📸</div>
+              <div class="social-info">
+                <div class="social-name">Instagram</div>
+                <div class="social-handle">@vivian.arias.studio</div>
+              </div>
+            </a>
+
+            <a id="link-github" href="https://github.com/VivianArias98" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de GitHub">
+              <div class="social-icon gh" aria-hidden="true">⌨️</div>
+              <div class="social-info">
+                <div class="social-name">GitHub</div>
+                <div class="social-handle">@VivianArias98</div>
+              </div>
+            </a>
+
+            <a id="link-linkedin" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de LinkedIn">
+              <div class="social-icon li" aria-hidden="true">💼</div>
+              <div class="social-info">
+                <div class="social-name">LinkedIn</div>
+                <div class="social-handle">Vivian Arias</div>
+              </div>
+            </a>
+
+            <a id="link-behance" href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Perfil de Behance">
+              <div class="social-icon be" aria-hidden="true">🎨</div>
+              <div class="social-info">
+                <div class="social-name">Behance</div>
+                <div class="social-handle">vivianarias.multimedia</div>
+              </div>
+            </a>
+
+          </nav>
+        </div><!-- .contact-info-block -->
+
+        <!-- Form column -->
+        <div class="contact-form-card fade-up" role="complementary" aria-label="Formulario de contacto">
+          <form id="contact-form" action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="input-nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="input-nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                  autocomplete="given-name"
+                >
+              </div>
+              <div class="form-group">
+                <label for="input-email">Email</label>
+                <input
+                  type="email"
+                  id="input-email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  required
+                  autocomplete="email"
+                >
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label for="input-asunto">Asunto</label>
+              <input
+                type="text"
+                id="input-asunto"
+                name="asunto"
+                placeholder="¿De qué trata tu proyecto?"
+                required
+              >
+            </div>
+
+            <div class="form-group full">
+              <label for="input-mensaje">Mensaje</label>
+              <textarea
+                id="input-mensaje"
+                name="mensaje"
+                placeholder="Cuéntame sobre tu idea, proyecto o consulta..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" id="btn-enviar" class="btn-submit">
+              ✦ Enviar mensaje
+            </button>
+          </form>
+        </div><!-- .contact-form-card -->
+
+      </div><!-- .contact-wrapper -->
+    </div><!-- .container -->
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">VA·Studio</span>
+
+        <p class="footer-copy">
+          © 2024 <span>Vivian Arias</span> · Ingeniería en Multimedia<br>
+          Taller de Diseño Multimedia — Todos los derechos reservados
+        </p>
+
+        <nav class="footer-links" aria-label="Links del footer">
+          <a href="#hero">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════
+       JAVASCRIPT — Interacciones
+  ══════════════════════════════════════════════════ -->
+  <script>
+    /* ── Navbar scroll ─────────────────────────────── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    /* ── Fade-up on scroll (IntersectionObserver) ──── */
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    fadeEls.forEach(el => observer.observe(el));
+
+    /* ── Contact form ──────────────────────────────── */
+    const form = document.getElementById('contact-form');
+    const btnSubmit = document.getElementById('btn-enviar');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      btnSubmit.textContent = '✓ ¡Mensaje enviado!';
+      btnSubmit.style.background = 'linear-gradient(135deg, #22d3ee, #a855f7)';
+      btnSubmit.disabled = true;
+
+      setTimeout(() => {
+        btnSubmit.textContent = '✦ Enviar mensaje';
+        btnSubmit.style.background = '';
+        btnSubmit.disabled = false;
+        form.reset();
+      }, 3500);
+    });
+  </script>
+
 </body>
 </html>

@@ -1,33 +1,35 @@
 /* Portafolio de Vivian Arias - Taller de Diseño Multimedia */
+/* Misma interfaz, solo cambió la paleta de color a blanco y negro */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 /* variables de color y espaciado */
 :root {
-  --bg-base: #07070f;
-  --bg-surface: #0e0e1c;
-  --bg-card: #13132a;
+  --bg-base: #0a0a0a;
+  --bg-surface: #111111;
+  --bg-card: #161616;
 
-  --morado: #a855f7;
-  --cyan: #22d3ee;
-  --rosa: #f472b6;
+  /* antes: morado, cyan y rosa -> ahora escala de grises */
+  --morado: #ffffff;
+  --cyan: #bdbdbd;
+  --rosa: #808080;
 
-  --gradiente: linear-gradient(135deg, var(--morado), var(--cyan));
-  --gradiente-calido: linear-gradient(135deg, var(--morado), var(--rosa));
+  --gradiente: linear-gradient(135deg, #ffffff, #9a9a9a);
+  --gradiente-calido: linear-gradient(135deg, #ffffff, #808080);
 
-  --texto: #f0f0ff;
-  --texto-secundario: #9494b8;
-  --texto-suave: #5c5c7d;
+  --texto: #f5f5f5;
+  --texto-secundario: #a3a3a3;
+  --texto-suave: #666666;
 
-  --borde: rgba(168, 85, 247, 0.18);
-  --vidrio: rgba(19, 19, 42, 0.65);
+  --borde: rgba(255, 255, 255, 0.14);
+  --vidrio: rgba(22, 22, 22, 0.65);
 
   --radio-s: 8px;
   --radio-m: 16px;
   --radio-l: 28px;
 
-  --sombra-morado: 0 0 40px rgba(168, 85, 247, 0.25);
-  --sombra-cyan: 0 0 40px rgba(34, 211, 238, 0.2);
+  --sombra-morado: 0 0 40px rgba(255, 255, 255, 0.12);
+  --sombra-cyan: 0 0 40px rgba(255, 255, 255, 0.1);
 
   --transicion: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --transicion-lenta: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,12 +69,12 @@ body::before {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-base); }
 ::-webkit-scrollbar-thumb {
-  background: var(--morado);
+  background: #777777;
   border-radius: 99px;
 }
 
 ::selection {
-  background: rgba(168, 85, 247, 0.35);
+  background: rgba(255, 255, 255, 0.3);
   color: #fff;
 }
 
@@ -162,7 +164,7 @@ body::before {
   right: 0;
   z-index: 1000;
   padding: 18px 0;
-  background: rgba(7, 7, 15, 0.85);
+  background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 var(--borde);
@@ -238,8 +240,8 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: rgba(168, 85, 247, 0.12);
-  border: 1px solid rgba(168, 85, 247, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   padding: 6px 16px;
   border-radius: 99px;
   font-size: 0.82rem;
@@ -285,6 +287,7 @@ body::before {
   flex-wrap: wrap;
 }
 
+/* botones: fondo claro, por eso el texto pasa a negro */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -293,19 +296,19 @@ body::before {
   background: var(--gradiente);
   border: none;
   border-radius: var(--radio-m);
-  color: #fff;
+  color: #0a0a0a;
   font-family: 'Outfit', sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
   transition: transform var(--transicion), box-shadow var(--transicion);
-  box-shadow: 0 4px 24px rgba(168, 85, 247, 0.4);
+  box-shadow: 0 4px 24px rgba(255, 255, 255, 0.18);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 36px rgba(168, 85, 247, 0.55);
+  box-shadow: 0 8px 36px rgba(255, 255, 255, 0.3);
 }
 
 .btn-outline {
@@ -326,7 +329,7 @@ body::before {
 }
 
 .btn-outline:hover {
-  background: rgba(168, 85, 247, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   border-color: var(--morado);
   transform: translateY(-3px);
 }
@@ -377,6 +380,7 @@ body::before {
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid var(--bg-base);
+  filter: grayscale(1);
 }
 
 .hero-badge {
@@ -473,6 +477,7 @@ body::before {
   object-fit: cover;
   object-position: top center;
   display: block;
+  filter: grayscale(1);
   transition: transform var(--transicion-lenta);
 }
 
@@ -484,7 +489,7 @@ body::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(7,7,15,0.7) 0%, transparent 50%);
+  background: linear-gradient(to top, rgba(10,10,10,0.7) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -530,8 +535,8 @@ body::before {
 
 .skill-tag {
   padding: 7px 16px;
-  background: rgba(168, 85, 247, 0.1);
-  border: 1px solid rgba(168, 85, 247, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 99px;
   font-size: 0.82rem;
   font-weight: 600;
@@ -541,7 +546,7 @@ body::before {
 }
 
 .skill-tag:hover {
-  background: rgba(168, 85, 247, 0.22);
+  background: rgba(255, 255, 255, 0.16);
   transform: translateY(-2px);
 }
 
@@ -629,7 +634,7 @@ body::before {
 .project-card:hover {
   transform: translateY(-10px) scale(1.015);
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55), var(--sombra-morado);
-  border-color: rgba(168, 85, 247, 0.45);
+  border-color: rgba(255, 255, 255, 0.45);
 }
 
 .card-img-wrap {
@@ -643,18 +648,18 @@ body::before {
   height: 100%;
   object-fit: cover;
   transition: transform var(--transicion-lenta), filter var(--transicion);
-  filter: brightness(0.88);
+  filter: grayscale(1) brightness(0.88);
 }
 
 .project-card:hover .card-img-wrap img {
   transform: scale(1.12);
-  filter: brightness(1);
+  filter: grayscale(1) brightness(1);
 }
 
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 30%, rgba(13, 13, 30, 0.85) 100%);
+  background: linear-gradient(to bottom, transparent 30%, rgba(10, 10, 10, 0.85) 100%);
   display: flex;
   align-items: flex-end;
   padding: 20px;
@@ -671,7 +676,7 @@ body::before {
   align-items: center;
   gap: 6px;
   background: var(--gradiente);
-  color: #fff;
+  color: #0a0a0a;
   font-size: 0.8rem;
   font-weight: 600;
   padding: 8px 18px;
@@ -690,7 +695,7 @@ body::before {
   position: absolute;
   top: 14px;
   left: 14px;
-  background: rgba(7, 7, 15, 0.72);
+  background: rgba(10, 10, 10, 0.72);
   backdrop-filter: blur(8px);
   border: 1px solid var(--borde);
   border-radius: 99px;
@@ -731,9 +736,9 @@ body::before {
   font-weight: 600;
   padding: 3px 10px;
   border-radius: 99px;
-  background: rgba(34, 211, 238, 0.1);
+  background: rgba(255, 255, 255, 0.07);
   color: var(--cyan);
-  border: 1px solid rgba(34, 211, 238, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   letter-spacing: 0.04em;
 }
 
@@ -785,8 +790,8 @@ body::before {
 }
 
 .social-link:hover {
-  background: rgba(168, 85, 247, 0.1);
-  border-color: rgba(168, 85, 247, 0.4);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.4);
   transform: translateX(6px);
 }
 
@@ -799,12 +804,13 @@ body::before {
   justify-content: center;
   font-size: 1.1rem;
   flex-shrink: 0;
+  filter: grayscale(1); /* convierte también los emojis a gris */
 }
 
-.social-icon.ig  { background: linear-gradient(135deg, #f9a825, #e91e8c, #7b1fa2); }
-.social-icon.gh  { background: #1a1a2e; border: 1px solid var(--borde); }
-.social-icon.li  { background: #003366; }
-.social-icon.be  { background: #1769ff; }
+.social-icon.ig  { background: linear-gradient(135deg, #e5e5e5, #8a8a8a, #3a3a3a); }
+.social-icon.gh  { background: #1f1f1f; border: 1px solid var(--borde); }
+.social-icon.li  { background: #2e2e2e; }
+.social-icon.be  { background: #4a4a4a; }
 
 .social-info .social-name {
   font-size: 0.9rem;
@@ -852,7 +858,7 @@ body::before {
 .form-group input,
 .form-group textarea,
 .form-group select {
-  background: rgba(7, 7, 15, 0.6);
+  background: rgba(10, 10, 10, 0.6);
   border: 1px solid var(--borde);
   border-radius: var(--radio-s);
   padding: 13px 16px;
@@ -867,7 +873,7 @@ body::before {
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--morado);
-  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.12);
 }
 
 .form-group textarea {
@@ -886,20 +892,20 @@ body::before {
   background: var(--gradiente);
   border: none;
   border-radius: var(--radio-m);
-  color: #fff;
+  color: #0a0a0a;
   font-family: 'Outfit', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
   letter-spacing: 0.04em;
   transition: opacity var(--transicion), transform var(--transicion), box-shadow var(--transicion);
-  box-shadow: 0 4px 24px rgba(168, 85, 247, 0.4);
+  box-shadow: 0 4px 24px rgba(255, 255, 255, 0.18);
 }
 
 .btn-submit:hover {
   opacity: 0.9;
   transform: translateY(-2px);
-  box-shadow: 0 8px 36px rgba(168, 85, 247, 0.55);
+  box-shadow: 0 8px 36px rgba(255, 255, 255, 0.3);
 }
 
 /* footer */
@@ -959,7 +965,7 @@ body::before {
     to right,
     transparent,
     var(--borde) 30%,
-    rgba(168, 85, 247, 0.35) 50%,
+    rgba(255, 255, 255, 0.3) 50%,
     var(--borde) 70%,
     transparent
   );

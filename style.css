@@ -154,7 +154,7 @@ body::before {
   100% { transform: translate(30px, 40px) scale(1.08); }
 }
 
-/* navbar siempre con fondo glass ya que no hay JS de scroll */
+/* navbar */
 #navbar {
   position: fixed;
   top: 0;
